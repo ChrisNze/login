@@ -12,13 +12,14 @@ body {
 	font-family: sans-serif;
 	letter-spacing: 0.1rem;
 	box-sizing: border-box;
+	line-height: 1.6;
 }
 
 .container {
 	background-color: #f5f5f5;
 	width: 100vw;
 	height: 100vh;
-	padding: 4rem 0 2rem 0;
+	padding: 4rem 0 0 0;
 	display: flex;
 	justify-content: center;
 }
@@ -45,7 +46,6 @@ body {
 
 .form_heading {
 	font-size: 3rem;
-	color: rgb(128, 128, 128);
 	margin-bottom: 4rem;
 }
 
@@ -56,58 +56,63 @@ body {
 
 .input_container input {
 	font-family: inherit;
-	padding: 2rem 0 2rem 2rem;
+	padding: 1.5rem 2rem;
 	border: none;
 	border-radius: 5px;
 	width: 100%;
-	color: rgb(128, 128, 128);
 }
 
 .input_container input::placeholder {
-	opacity: 0.5;
+	color: rgb(128, 128, 128);
 }
 
 .input_container input::placeholder,
 .input_container input {
-	font-size: 2rem;
+	font-size: 1.6rem;
 	letter-spacing: inherit;
 }
 
 .input_container input:focus {
-	box-shadow: 0 0 0.5rem rgba(13, 109, 253, 0.5);
+	box-shadow: 0 0 0.8rem rgba(13, 109, 253, 0.5);
 	outline: 1.5px solid rgba(13, 109, 253, 0.5);
 }
 
 .input_password {
-	background-color: rgba(204, 204, 204, 0.4);
+	background-color: rgba(204, 204, 204, 0.2);
 }
 
 .btn {
 	width: 100%;
-	padding: 2rem 2rem;
+	padding: 1.5rem 0;
 	margin-top: 2rem;
 	border: none;
 	font-size: 1.8rem;
 	border-radius: 5px;
-	font-family: inherit;
 	cursor: pointer;
-	transition: all 0.5s;
+	transition: all 0.2s;
 }
 
 .sign_in-btn {
-	background-color: rgba(13, 109, 253, 0.5);
+	background-color: rgb(13, 109, 253);
 	color: #fff;
+	font-weight: 500;
+}
+
+.sign_in-btn:hover {
+	background-color: rgba(13, 109, 253, 0.85);
 }
 
 .btn:hover {
-	background-color: rgba(13, 109, 253, 0.767);
 	color: #fff;
 	cursor: pointer;
 }
 .new_acct-btn {
 	background-color: #fff;
-	color: rgb(128, 128, 128);
 	box-shadow: 0 0.1rem 0.8rem rgba(128, 128, 128, 0.4);
+}
+
+.new_acct-btn:hover {
+	background-color: rgb(13, 109, 253);
 }
 
 p a {
@@ -117,20 +122,19 @@ p a {
 
 .forget_password {
 	margin: 2rem 0 3rem 0;
-	color: rgb(128, 128, 128);
 }
 
 .forget_password a {
-	color: rgba(128, 128, 128, 0.5);
+	color: rgba(0, 0, 0, 0.7);
 	cursor: pointer;
 }
 
 p a:hover {
-	color: rgb(128, 128, 128);
+	color: rgb(0, 0, 0);
 }
 
 .column_acct a {
-	color: rgba(128, 128, 128, 0.8);
+	color: rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 1200px) {
@@ -150,6 +154,10 @@ p a:hover {
 		width: 80%;
 	}
 
+	.form_heading {
+		font-size: 5rem;
+	}
+
 	.container {
 		padding: 4rem 0 4rem 0;
 	}
@@ -158,8 +166,5 @@ p a:hover {
 @media (max-width: 400px) {
 	html {
 		font-size: 40%;
-	}
-	.form_container {
-		width: 90%;
 	}
 }
