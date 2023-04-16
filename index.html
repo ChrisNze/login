@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="icon" href="img/logo.png" />
+		<title>Login</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/logo.png">
-    <title>Login</title>
-</head>
+	<body>
+		<div class="container">
+			<div class="form_container">
+				<form action="#">
+					<div class="form_logo">
+						<img src="img/logo-2.png" alt="logo1" />
+					</div>
 
-<body>
-    <div class="container">
-        <div class="form_container">
-            <form action="#">
-                <div class="form_logo">
-                    <img src="img/logo-2.png" alt="logo">
-                </div>
+					<h1 class="form_heading">Sign in</h1>
 
-                <h1 class="form_heading">Sign in</h1>
+					<div class="input_container">
+						<input type="email" name="email" placeholder="Username" class="input_email" required autofocus />
+					</div>
 
-                <div class="input_container">
-                    <input type="email" name="email" placeholder="Username" class="input_email" required autofocus>
-                </div>
+					<div class="input_container">
+						<input type="password" name="password" placeholder="Password" class="input_password" required />
+					</div>
 
-                <div class="input_container">
-                    <input type="password" name="password" placeholder="Password" class="input_password" required>
-                </div>
+					<button class="sign_in-btn btn" type="button">Sign in</button>
 
-                <button class="sign_in-btn btn" type="button">Sign in</button>
+					<p class="forget_password"><a href="#">Forget your password?</a></p>
+					<p class="column_acct"><a href="#">Don't have a Column account?</a></p>
 
-                <p class="forget_password"><a href="#">Forget your password?</a></p>
-                <p class="column_acct"><a href="#">Don't have a Column account?</a></p>
-
-                <button class="new_acct-btn btn" type="button">Create new account</button>
-            </form>
-        </div>
-
-    </div>
-</body>
-
+					<button class="new_acct-btn btn" type="button">Create new account</button>
+				</form>
+			</div>
+		</div>
+	</body>
 </html>
